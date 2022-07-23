@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ImageBazaar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      :root {
+        /* --black: linear-gradient(180deg, #864BF2 0%, #6C56F7 100%); */
+        --black: #000000;
+        --white: #FFFFFF;
+      }
+      @media screen and (max-width: 0px) {}
+      /* .Concept:hover{
+       cursor: pointer;
+       opacity: .5;
+      }
+      .ConceptText{
+        opacity: 0;
+        position: absolute;
+        display: block;
+        top: 40%;
+        left: 30%;
+      }
+      .ConceptText:hover{
+        opacity: 1;
+      } */
+                .imageContainer {
+                  position: relative;
+                  width: 100%;
+                }
+                
+                .image1 {
+                  opacity: 1;
+                  display: block;
+                  width: 100%;
+                  height: auto;
+                  transition: .5s ease;
+                  backface-visibility: hidden;
+                }
+                
+                .middle1 {
+                  transition: .5s ease;
+                  opacity: 0;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  text-align: center;
+                }
+                
+                .imageContainer:hover .image1 {opacity: .5;}
+                .imageContainer:hover .middle1 {opacity: 1;}
+                
+                .text1 {
+                  color: white;
+                  font-size: 16px;
+                }
+    </style>
+  </head>
+  <body style="background: var(--black); color: var(--white);">
+    
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-bars"></i> BROWSE CATEGORIES
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      ImageBazaar
+                    </a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Pricing</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="py-3 sticky-top bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <img src="assets/images/Freebanner.jpg" class="img-fluid">
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row pt-5">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Concept-and-Ideas.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Concept-and-Ideas</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Lifestyle-Families.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Lifestyle-Families</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Lifestyle-Children.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Lifestyle-Children</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Banking-and-Finance.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Banking-and-Finance</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Shopping-and-Retail.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Shopping-and-Retail</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Lifestyle-Teenagers.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Lifestyle-Teenagers</div></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Lifestyle-Seniors.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Seniors</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Vacation-and-Holidays.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Vacation-and-Holidays</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Without-People.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Without-People</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Wedding.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Wedding</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Healthcare-and-Medical.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Healthcare-and-Medical</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Indian-Culture.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Indian-Culture</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Fashion71.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Fashion</div></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Beauty.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Beauty</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Fitness.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Fitness</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Lifestyle-Adult.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Adult</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Festivals-and-Occasions.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Festivals-and-Occasions</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Education-and-Learning.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Education</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Food-and-Drink1.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Food</div></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Business-and-Corporate.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Business-and-Corporate</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Friends.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Friends</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Rural-India.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Rural-India</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Nature.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Nature</div></div>
+                </div>
+              </a>
+            </div>
+            <div class="row pb-4">
+              <a href="">
+                <div class="imageContainer">
+                  <img src="assets/images/Lifestyle-Couple1.jpg" class="image1 img-fluid">
+                  <div class="middle1"><div class="text1">Couple</div></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" style="background: #EEEEEE;color: var(--black); text-align: center;">
+      <div class="container">
+        <div class="row">
+          <h2>Popular Searches</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Family</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Diwali</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Business</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Jewellery</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Couples</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Wedding</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Festivals</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Growth</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Money</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Farmer</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Kitchen</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Doctor</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Celebration</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Office</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Travel</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Shopping</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Education</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Students</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Insurance</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Mobile</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Computer</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Food</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Baby</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Fashion</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Beauty</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Woman</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Youth</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Seniors</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Yoga</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Meditation</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Success</a>
+            <a href="" class="btn btn-light mx-1 my-3" style="border: 1px solid rgb(175, 175, 175); border-radius: 5rem;">Rural</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" style="background: var(--white);color: var(--black); text-align: center;">
+      <div class="container">
+        <div class="row">
+          <h2>Why ImagesBazaar?</h2>
+          <p>
+            India's diversity and complexity can be witnessed through its people, traditions and values associated with distinctive regional customs, habits, lifestyle and festivals. That's why our content reflects the innate expressions of deep-rooted feelings of individuals through which spring their day-to-day actions. From contemporary concepts and ideas to the broadest range of categories depicting Indians in virtually all walks of life, age groups and expressions - you will find it all here! Know More
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-3">
+      <div class="container">
+        <div class="row">
+          <h3 class="py-3" style="color: #A8A8A8;text-align: center;">World's largest collection of Creative Indian images & videos</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="row">All India Toll Free: 1800-11-6869</div>
+            <div class="row"> <img src="assets/images/btn-Help1.png" class="img-fluid" style="width: 50%;"> </div>
+            <div class="row">© ImagesBazaar.com. A division of Mash Audio Visuals Pvt. Ltd. All rights reserved.</div>
+          </div>
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="col-lg-4">Company Info</div>
+              <div class="col-lg-4">Learn More</div>
+              <div class="col-lg-4">Need Help</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
